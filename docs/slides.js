@@ -24,8 +24,8 @@ window.SLIDES = [
     return `<h2>Assumptions &amp; strategy</h2>
       <div class="ptsec">What I assumed</div>
       <ul class="pointlist">
-        <li><span class="pt">1</span><span><b>The log is at-least-once, not exactly-once.</b> The same ${m('tx_seq')} can arrive twice. A redelivery is not a new event.</span></li>
-        <li><span class="pt">2</span><span><b>tx_seq is the only ordering that matters.</b> Not ${m('changed_at')}, not arrival order. Two updates in one batch apply in tx_seq order, last write wins.</span></li>
+        <li><span class="pt">1</span><span><b>The log is at-least-once, not exactly-once.</b> The same ${m('tx_seq')} can arrive twice, and a redelivery is not a new event.</span></li>
+        <li><span class="pt">2</span><span><b>tx_seq is the only ordering that matters.</b> Not ${m('changed_at')} and not arrival order: within a batch, the highest tx_seq wins.</span></li>
         <li><span class="pt">3</span><span><b>A delete is sticky.</b> Once an order is deleted, no later change un-deletes it, even a higher-tx_seq update.</span></li>
       </ul>
       <div class="ptsec">How it is built</div>
