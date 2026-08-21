@@ -1,6 +1,7 @@
 {
- "generated_at": "2026-08-21T19:12:58+00:00",
- "files_loaded": [
+ "generated_at": "2026-08-21T19:14:14+00:00",
+ "files_loaded": [],
+ "files_pending": [
   "changes_01",
   "changes_02",
   "changes_03",
@@ -8,18 +9,17 @@
   "changes_05",
   "changes_06"
  ],
- "files_pending": [],
- "next_file": null,
+ "next_file": "changes_01",
  "row_counts": {
-  "dim_order": 10,
-  "dim_customer": 5,
-  "fact_order_change": 30,
-  "dm_open_orders": 5,
-  "dm_order_as_of": 44
+  "dim_order": 0,
+  "dim_customer": 0,
+  "fact_order_change": 0,
+  "dm_open_orders": 0,
+  "dm_order_as_of": 0
  },
- "orders_total": 10,
- "orders_open": 5,
- "orders_deleted": 5,
- "changes_applied": 30,
- "redelivered_ignored": 2
+ "orders_total": 0,
+ "orders_open": 0,
+ "orders_deleted": 0,
+ "changes_applied": 0,
+ "redelivered_ignored": 0
 }

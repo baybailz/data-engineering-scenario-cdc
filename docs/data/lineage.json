@@ -1,36 +1,6 @@
 {
  "nodes": [
   {
-   "id": "dim_customer",
-   "layer": "conformed",
-   "type": "model",
-   "path": "models/conformed/dim_customer.sql"
-  },
-  {
-   "id": "dim_order",
-   "layer": "conformed",
-   "type": "model",
-   "path": "models/conformed/dim_order.sql"
-  },
-  {
-   "id": "fact_order_change",
-   "layer": "conformed",
-   "type": "model",
-   "path": "models/conformed/fact_order_change.sql"
-  },
-  {
-   "id": "dm_order_as_of",
-   "layer": "datamart",
-   "type": "model",
-   "path": "models/datamart/dm_order_as_of.sql"
-  },
-  {
-   "id": "dm_open_orders",
-   "layer": "datamart",
-   "type": "model",
-   "path": "models/datamart/dm_open_orders.sql"
-  },
-  {
    "id": "trn_tbl_order_change",
    "layer": "transform",
    "type": "model",
@@ -49,6 +19,36 @@
    "path": "models/stage/stg_incoming_order_change.sql"
   },
   {
+   "id": "fact_order_change",
+   "layer": "conformed",
+   "type": "model",
+   "path": "models/conformed/fact_order_change.sql"
+  },
+  {
+   "id": "dim_customer",
+   "layer": "conformed",
+   "type": "model",
+   "path": "models/conformed/dim_customer.sql"
+  },
+  {
+   "id": "dim_order",
+   "layer": "conformed",
+   "type": "model",
+   "path": "models/conformed/dim_order.sql"
+  },
+  {
+   "id": "dm_open_orders",
+   "layer": "datamart",
+   "type": "model",
+   "path": "models/datamart/dm_open_orders.sql"
+  },
+  {
+   "id": "dm_order_as_of",
+   "layer": "datamart",
+   "type": "model",
+   "path": "models/datamart/dm_order_as_of.sql"
+  },
+  {
    "id": "incoming_order_change",
    "layer": "seed",
    "type": "seed",
@@ -56,26 +56,6 @@
   }
  ],
  "edges": [
-  [
-   "trn_tbl_order_change",
-   "dim_customer"
-  ],
-  [
-   "trn_tbl_order_current",
-   "dim_order"
-  ],
-  [
-   "trn_tbl_order_change",
-   "fact_order_change"
-  ],
-  [
-   "fact_order_change",
-   "dm_order_as_of"
-  ],
-  [
-   "dim_order",
-   "dm_open_orders"
-  ],
   [
    "stg_incoming_order_change",
    "trn_tbl_order_change"
@@ -87,6 +67,26 @@
   [
    "incoming_order_change",
    "stg_incoming_order_change"
+  ],
+  [
+   "trn_tbl_order_change",
+   "fact_order_change"
+  ],
+  [
+   "trn_tbl_order_change",
+   "dim_customer"
+  ],
+  [
+   "trn_tbl_order_current",
+   "dim_order"
+  ],
+  [
+   "dim_order",
+   "dm_open_orders"
+  ],
+  [
+   "fact_order_change",
+   "dm_order_as_of"
   ]
  ],
  "layers": [
