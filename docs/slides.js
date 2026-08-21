@@ -28,7 +28,7 @@ window.SLIDES = [
         <li><span class="pt">2</span><span><b>tx_seq is the only ordering that matters.</b> Not ${m('changed_at')} and not arrival order: within a batch, the highest tx_seq wins.</span></li>
         <li><span class="pt">3</span><span><b>A delete is sticky.</b> Once an order is deleted, no later change un-deletes it, even a higher-tx_seq update.</span></li>
       </ul>
-      <div class="ptsec">How it is built</div>
+      <div class="ptsec">How I built it</div>
       <ul class="pointlist">
         <li><span class="pt">1</span><span><b>Layered.</b> stage (rename) → transform (dedup + apply CDC) → conformed (publish, keyed, tested) → datamart (what BI reads).</span></li>
         <li><span class="pt">2</span><span><b>Soft delete only.</b> ${m('dim_order')} never drops a row; ${m('is_deleted')} and ${m('deleted_at')} carry the fact.</span></li>
