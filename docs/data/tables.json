@@ -1,7 +1,195 @@
 {
- "dim_order": [],
- "dim_customer": [],
- "fact_order_change": [],
- "dm_open_orders": [],
- "dm_order_as_of": []
+ "dim_order": [
+  {
+   "order_key": 9207740599426836650,
+   "customer_key": 9074169459783589416,
+   "order_id": 1003,
+   "customer_id": 503,
+   "status": "pending",
+   "amount": "75.00",
+   "changed_at": "2026-06-01 00:03:00",
+   "latest_tx_seq": 3,
+   "is_deleted": false,
+   "deleted_at": null,
+   "dbt_run_timestamp": "2026-08-21 19:15:24.957000+00:00"
+  },
+  {
+   "order_key": 11640297415490393086,
+   "customer_key": 2822479232077674419,
+   "order_id": 1004,
+   "customer_id": 504,
+   "status": "pending",
+   "amount": "300.00",
+   "changed_at": "2026-06-01 00:05:00",
+   "latest_tx_seq": 5,
+   "is_deleted": false,
+   "deleted_at": null,
+   "dbt_run_timestamp": "2026-08-21 19:15:24.957000+00:00"
+  },
+  {
+   "order_key": 15700378863967709691,
+   "customer_key": 6327945619832812725,
+   "order_id": 1002,
+   "customer_id": 502,
+   "status": "pending",
+   "amount": "250.00",
+   "changed_at": "2026-06-01 00:02:00",
+   "latest_tx_seq": 2,
+   "is_deleted": false,
+   "deleted_at": null,
+   "dbt_run_timestamp": "2026-08-21 19:15:24.957000+00:00"
+  },
+  {
+   "order_key": 2082349533517235128,
+   "customer_key": 4637870354389887323,
+   "order_id": 1001,
+   "customer_id": 501,
+   "status": "paid",
+   "amount": "100.00",
+   "changed_at": "2026-06-01 00:04:00",
+   "latest_tx_seq": 4,
+   "is_deleted": false,
+   "deleted_at": null,
+   "dbt_run_timestamp": "2026-08-21 19:15:24.957000+00:00"
+  }
+ ],
+ "dim_customer": [
+  {
+   "customer_key": 4637870354389887323,
+   "customer_id": 501,
+   "dbt_run_timestamp": "2026-08-21 19:15:24.533000+00:00"
+  },
+  {
+   "customer_key": 6327945619832812725,
+   "customer_id": 502,
+   "dbt_run_timestamp": "2026-08-21 19:15:24.533000+00:00"
+  },
+  {
+   "customer_key": 2822479232077674419,
+   "customer_id": 504,
+   "dbt_run_timestamp": "2026-08-21 19:15:24.533000+00:00"
+  },
+  {
+   "customer_key": 9074169459783589416,
+   "customer_id": 503,
+   "dbt_run_timestamp": "2026-08-21 19:15:24.533000+00:00"
+  }
+ ],
+ "fact_order_change": [
+  {
+   "tx_seq": 1,
+   "order_id": 1001,
+   "customer_id": 501,
+   "op": "I",
+   "status": "pending",
+   "amount": "100.00",
+   "changed_at": "2026-06-01 00:01:00",
+   "source_file": "changes_01",
+   "dbt_run_timestamp": "2026-08-21 19:15:24.532000+00:00"
+  },
+  {
+   "tx_seq": 2,
+   "order_id": 1002,
+   "customer_id": 502,
+   "op": "I",
+   "status": "pending",
+   "amount": "250.00",
+   "changed_at": "2026-06-01 00:02:00",
+   "source_file": "changes_01",
+   "dbt_run_timestamp": "2026-08-21 19:15:24.532000+00:00"
+  },
+  {
+   "tx_seq": 3,
+   "order_id": 1003,
+   "customer_id": 503,
+   "op": "I",
+   "status": "pending",
+   "amount": "75.00",
+   "changed_at": "2026-06-01 00:03:00",
+   "source_file": "changes_01",
+   "dbt_run_timestamp": "2026-08-21 19:15:24.532000+00:00"
+  },
+  {
+   "tx_seq": 4,
+   "order_id": 1001,
+   "customer_id": 501,
+   "op": "U",
+   "status": "paid",
+   "amount": "100.00",
+   "changed_at": "2026-06-01 00:04:00",
+   "source_file": "changes_01",
+   "dbt_run_timestamp": "2026-08-21 19:15:24.532000+00:00"
+  },
+  {
+   "tx_seq": 5,
+   "order_id": 1004,
+   "customer_id": 504,
+   "op": "I",
+   "status": "pending",
+   "amount": "300.00",
+   "changed_at": "2026-06-01 00:05:00",
+   "source_file": "changes_01",
+   "dbt_run_timestamp": "2026-08-21 19:15:24.532000+00:00"
+  }
+ ],
+ "dm_open_orders": [
+  {
+   "order_id": 1001,
+   "customer_id": 501,
+   "status": "paid",
+   "amount": "100.00",
+   "changed_at": "2026-06-01 00:04:00"
+  },
+  {
+   "order_id": 1002,
+   "customer_id": 502,
+   "status": "pending",
+   "amount": "250.00",
+   "changed_at": "2026-06-01 00:02:00"
+  },
+  {
+   "order_id": 1003,
+   "customer_id": 503,
+   "status": "pending",
+   "amount": "75.00",
+   "changed_at": "2026-06-01 00:03:00"
+  },
+  {
+   "order_id": 1004,
+   "customer_id": 504,
+   "status": "pending",
+   "amount": "300.00",
+   "changed_at": "2026-06-01 00:05:00"
+  }
+ ],
+ "dm_order_as_of": [
+  {
+   "batch": "changes_01",
+   "order_id": 1001,
+   "status": "paid",
+   "amount": "100.00",
+   "is_deleted": false
+  },
+  {
+   "batch": "changes_01",
+   "order_id": 1002,
+   "status": "pending",
+   "amount": "250.00",
+   "is_deleted": false
+  },
+  {
+   "batch": "changes_01",
+   "order_id": 1003,
+   "status": "pending",
+   "amount": "75.00",
+   "is_deleted": false
+  },
+  {
+   "batch": "changes_01",
+   "order_id": 1004,
+   "status": "pending",
+   "amount": "300.00",
+   "is_deleted": false
+  }
+ ]
 }

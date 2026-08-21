@@ -1,50 +1,59 @@
 {
- "name": "changes_01",
+ "name": "changes_02",
  "rows": [
   {
-   "op": "I",
-   "order_id": "1001",
-   "customer_id": "501",
-   "status": "pending",
-   "amount": "100.00",
-   "changed_at": "2026-06-01T00:01:00Z",
-   "tx_seq": "1"
-  },
-  {
-   "op": "I",
+   "op": "U",
    "order_id": "1002",
    "customer_id": "502",
-   "status": "pending",
+   "status": "paid",
    "amount": "250.00",
-   "changed_at": "2026-06-01T00:02:00Z",
-   "tx_seq": "2"
+   "changed_at": "2026-06-01T00:06:00Z",
+   "tx_seq": "6"
+  },
+  {
+   "op": "U",
+   "order_id": "1002",
+   "customer_id": "502",
+   "status": "shipped",
+   "amount": "250.00",
+   "changed_at": "2026-06-01T00:07:00Z",
+   "tx_seq": "7"
+  },
+  {
+   "op": "D",
+   "order_id": "1003",
+   "customer_id": "503",
+   "status": "cancelled",
+   "amount": "75.00",
+   "changed_at": "2026-06-01T00:08:00Z",
+   "tx_seq": "8"
   },
   {
    "op": "I",
-   "order_id": "1003",
-   "customer_id": "503",
+   "order_id": "1005",
+   "customer_id": "505",
    "status": "pending",
-   "amount": "75.00",
-   "changed_at": "2026-06-01T00:03:00Z",
-   "tx_seq": "3"
+   "amount": "150.00",
+   "changed_at": "2026-06-01T00:09:00Z",
+   "tx_seq": "9"
+  },
+  {
+   "op": "U",
+   "order_id": "1004",
+   "customer_id": "504",
+   "status": "paid",
+   "amount": "300.00",
+   "changed_at": "2026-06-01T00:10:00Z",
+   "tx_seq": "10"
   },
   {
    "op": "U",
    "order_id": "1001",
    "customer_id": "501",
-   "status": "paid",
+   "status": "shipped",
    "amount": "100.00",
-   "changed_at": "2026-06-01T00:04:00Z",
-   "tx_seq": "4"
-  },
-  {
-   "op": "I",
-   "order_id": "1004",
-   "customer_id": "504",
-   "status": "pending",
-   "amount": "300.00",
-   "changed_at": "2026-06-01T00:05:00Z",
-   "tx_seq": "5"
+   "changed_at": "2026-06-01T00:11:00Z",
+   "tx_seq": "11"
   }
  ]
 }

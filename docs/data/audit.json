@@ -1,32 +1,32 @@
 [
  {
   "model_name": "dm_open_orders",
-  "row_count": 0,
-  "invocation_id": "7a6a060e-baf0-4b1f-ad6b-9819aa0d8dfd",
-  "loaded_at": "2026-08-21 19:14:13.425000"
+  "row_count": 4,
+  "invocation_id": "4300e5c0-f8a4-43d2-9b88-11b350fd09be",
+  "loaded_at": "2026-08-21 19:15:25.336000"
  },
  {
   "model_name": "dm_order_as_of",
-  "row_count": 0,
-  "invocation_id": "7a6a060e-baf0-4b1f-ad6b-9819aa0d8dfd",
-  "loaded_at": "2026-08-21 19:14:13.355000"
+  "row_count": 4,
+  "invocation_id": "4300e5c0-f8a4-43d2-9b88-11b350fd09be",
+  "loaded_at": "2026-08-21 19:15:25.291000"
  },
  {
   "model_name": "dim_order",
-  "row_count": 0,
-  "invocation_id": "7a6a060e-baf0-4b1f-ad6b-9819aa0d8dfd",
-  "loaded_at": "2026-08-21 19:14:13.018000"
- },
- {
-  "model_name": "fact_order_change",
-  "row_count": 0,
-  "invocation_id": "7a6a060e-baf0-4b1f-ad6b-9819aa0d8dfd",
-  "loaded_at": "2026-08-21 19:14:12.601000"
+  "row_count": 4,
+  "invocation_id": "4300e5c0-f8a4-43d2-9b88-11b350fd09be",
+  "loaded_at": "2026-08-21 19:15:24.957000"
  },
  {
   "model_name": "dim_customer",
-  "row_count": 0,
-  "invocation_id": "7a6a060e-baf0-4b1f-ad6b-9819aa0d8dfd",
-  "loaded_at": "2026-08-21 19:14:12.592000"
+  "row_count": 4,
+  "invocation_id": "4300e5c0-f8a4-43d2-9b88-11b350fd09be",
+  "loaded_at": "2026-08-21 19:15:24.533000"
+ },
+ {
+  "model_name": "fact_order_change",
+  "row_count": 5,
+  "invocation_id": "4300e5c0-f8a4-43d2-9b88-11b350fd09be",
+  "loaded_at": "2026-08-21 19:15:24.532000"
  }
 ]
