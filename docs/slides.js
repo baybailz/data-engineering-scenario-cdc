@@ -14,9 +14,7 @@ window.SLIDES = [
         <span class="schip hot">python</span><span class="schip hot">dbt</span>
         <span class="schip">duckdb</span><span class="schip">github actions</span>
       </div>
-      <p class="lead">An orders system emits a change log: insert, update, delete, one row per
-        event, like Debezium or Aecorsoft CDC output. This pipeline applies it idempotently and
-        produces both the current state of every order and the full history of how it got there.</p>
+      <div class="whw"><span class="whw-k">What</span><span>An orders system streams every change: new orders, edits, deletions. Messages can repeat or arrive out of order.</span><span class="whw-k">How</span><span>Every change is kept as a log. From it the pipeline builds the current state of each order and its full history, ignoring repeats and never bringing a deleted order back.</span><span class="whw-k">Why</span><span>This is how a warehouse stays in step with a live system without copying the whole database every night.</span></div>
       <div class="byline">${esc(S.CFG.author)}</div>
     </div>`;}},
 
