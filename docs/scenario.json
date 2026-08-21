@@ -1,16 +1,28 @@
 {
   "repo": "baybailz/data-engineering-scenario-cdc",
   "title": "Inserts, updates, deletes.",
-  "subtitle": "One change log in. Current state and history out. · Bailey Thompson",
+  "subtitle": "Data engineering scenario · Bailey Thompson",
   "author": "Bailey Thompson",
   "workflow": "pipeline.yml",
-  "actions": { "run": "load_next", "reset": "reset" },
+  "actions": {
+    "run": "load_next",
+    "reset": "reset"
+  },
   "run_label": "Load next batch",
   "dbt_select": "tag:scenario",
   "pipeline_steps": [
-    { "key": "python", "label": "Python" },
-    { "key": "dbt",    "label": "dbt build" },
-    { "key": "out",    "label": "Applied" }
+    {
+      "key": "python",
+      "label": "Python"
+    },
+    {
+      "key": "dbt",
+      "label": "dbt build"
+    },
+    {
+      "key": "out",
+      "label": "Applied"
+    }
   ],
   "arch_subtitles": {
     "python": "append change log · run.py",
@@ -19,10 +31,30 @@
   },
   "landing": {
     "seed": "incoming_order_change",
-    "columns": ["op", "order_id", "customer_id", "status", "amount", "changed_at", "tx_seq"]
+    "columns": [
+      "op",
+      "order_id",
+      "customer_id",
+      "status",
+      "amount",
+      "changed_at",
+      "tx_seq"
+    ]
   },
   "export": {
-    "tables": ["dim_order", "dim_customer", "fact_order_change", "dm_open_orders", "dm_order_as_of"],
-    "layers": ["seed", "stage", "transform", "conformed", "datamart"]
+    "tables": [
+      "dim_order",
+      "dim_customer",
+      "fact_order_change",
+      "dm_open_orders",
+      "dm_order_as_of"
+    ],
+    "layers": [
+      "seed",
+      "stage",
+      "transform",
+      "conformed",
+      "datamart"
+    ]
   }
 }
