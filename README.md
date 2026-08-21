@@ -13,7 +13,7 @@ the real pipeline and publishes the result back to the page.
 ## The hard part
 
 Order 1003 gets inserted, then deleted. A later batch redelivers a stale update for
-it — the source system doesn't know it's gone:
+it; the source system does not know it is gone:
 
 | tx_seq | op | Applied? |
 |---|---|---|
@@ -23,7 +23,7 @@ it — the source system doesn't know it's gone:
 
 A later, higher-tx_seq change does not undo an earlier delete. `dim_order.is_deleted`
 is computed as `bool_or(op = 'D')` over the whole change history for that key, not
-just whatever landed last — see `macros/apply_cdc.sql`.
+just whatever landed last. See `macros/apply_cdc.sql`.
 
 Separately, `tx_seq` 7 shows up twice, once in `changes_02.csv` and again, redelivered,
 in `changes_03.csv`. It is deduped to one applied change, one row in `fact_order_change`,
@@ -35,9 +35,9 @@ not two.
    `source_file` and `row_num`. Append-only; nothing is rewritten except on reset.
 2. **Dedupe.** `trn_tbl_order_change` drops any tx_seq already seen, so a redelivery
    changes nothing.
-3. **Apply.** `trn_tbl_order_current` ranks the deduped log by tx_seq per order —
-   last write wins on status and amount — and sets `is_deleted` sticky, once true always
-   true, via `macros/apply_cdc.sql`.
+3. **Apply.** `trn_tbl_order_current` ranks the deduped log by tx_seq per order (last
+   write wins on status and amount) and sets `is_deleted` sticky, once true always true,
+   via `macros/apply_cdc.sql`.
 4. **Publish.** `dim_order` and `fact_order_change` are incremental and tested; a delete
    never removes a row, it only flags one. `dm_open_orders` and `dm_order_as_of` read
    from there.
@@ -49,16 +49,16 @@ landing seed is a pure function of the state file.
 ## Layout
 
 ```
-incoming/          changes_01.csv .. changes_06.csv, the simulated CDC feed
-scripts/           run.py (land the next batch), scenario.py (page hooks)
-seeds/             incoming_order_change, rebuilt from state on every run
-models/stage/      rename and type the landing table, no logic
-models/transform/  dedupe by tx_seq · apply_cdc: rank + sticky delete
-models/conformed/  dim_order · dim_customer · fact_order_change
-models/datamart/   dm_open_orders · dm_order_as_of
-macros/apply_cdc.sql   dedupe by sequence, last write wins, tombstone not delete
-tests/             deleted orders never open · no resurrection after delete
-docs/              the presentation and console, published by Pages
+incoming/             changes_01.csv .. changes_06.csv, the simulated CDC feed
+scripts/              run.py (land the next batch), scenario.py (page hooks)
+seeds/                incoming_order_change, rebuilt from state on every run
+models/stage/         rename and type the landing table, no logic
+models/transform/     dedupe by tx_seq · apply_cdc: rank + sticky delete
+models/conformed/     dim_order · dim_customer · fact_order_change
+models/datamart/      dm_open_orders · dm_order_as_of
+macros/apply_cdc.sql  dedupe by sequence, last write wins, tombstone not delete
+tests/                deleted orders never open · no resurrection after delete
+docs/                 the presentation and console, published by Pages
 ```
 
 ## Run it
