@@ -1,20 +1,1202 @@
 [
  {
-  "model_name": "dm_customer_summary",
-  "row_count": 4,
-  "invocation_id": "701ce4a0-8937-4456-be88-3187c115032b",
-  "loaded_at": "2026-08-21 18:45:26.633000"
+  "model_name": "dm_open_orders",
+  "row_count": 5,
+  "invocation_id": "c56869ab-9a5e-4056-ac6f-644b99e2c355",
+  "loaded_at": "2026-08-21 15:12:57.230000"
  },
  {
-  "model_name": "dim_record_status",
-  "row_count": 0,
-  "invocation_id": "701ce4a0-8937-4456-be88-3187c115032b",
-  "loaded_at": "2026-08-21 18:45:26.329000"
+  "model_name": "dim_order",
+  "row_count": 10,
+  "invocation_id": "c56869ab-9a5e-4056-ac6f-644b99e2c355",
+  "loaded_at": "2026-08-21 15:12:56.642000"
+ },
+ {
+  "model_name": "dm_order_as_of",
+  "row_count": 44,
+  "invocation_id": "c56869ab-9a5e-4056-ac6f-644b99e2c355",
+  "loaded_at": "2026-08-21 15:12:56.636000"
+ },
+ {
+  "model_name": "dim_customer",
+  "row_count": 5,
+  "invocation_id": "c56869ab-9a5e-4056-ac6f-644b99e2c355",
+  "loaded_at": "2026-08-21 15:12:55.921000"
+ },
+ {
+  "model_name": "fact_order_change",
+  "row_count": 30,
+  "invocation_id": "c56869ab-9a5e-4056-ac6f-644b99e2c355",
+  "loaded_at": "2026-08-21 15:12:55.918000"
+ },
+ {
+  "model_name": "dm_open_orders",
+  "row_count": 6,
+  "invocation_id": "4b8093a4-ddab-412b-8794-1032d2afd458",
+  "loaded_at": "2026-08-21 15:12:49.266000"
+ },
+ {
+  "model_name": "dm_order_as_of",
+  "row_count": 34,
+  "invocation_id": "4b8093a4-ddab-412b-8794-1032d2afd458",
+  "loaded_at": "2026-08-21 15:12:48.750000"
+ },
+ {
+  "model_name": "dim_order",
+  "row_count": 10,
+  "invocation_id": "4b8093a4-ddab-412b-8794-1032d2afd458",
+  "loaded_at": "2026-08-21 15:12:48.691000"
+ },
+ {
+  "model_name": "dim_customer",
+  "row_count": 5,
+  "invocation_id": "4b8093a4-ddab-412b-8794-1032d2afd458",
+  "loaded_at": "2026-08-21 15:12:48.056000"
+ },
+ {
+  "model_name": "fact_order_change",
+  "row_count": 26,
+  "invocation_id": "4b8093a4-ddab-412b-8794-1032d2afd458",
+  "loaded_at": "2026-08-21 15:12:48.050000"
+ },
+ {
+  "model_name": "dm_open_orders",
+  "row_count": 5,
+  "invocation_id": "1e8a613a-1b2c-4561-8bb7-76d3045b1e13",
+  "loaded_at": "2026-08-21 15:12:42.740000"
+ },
+ {
+  "model_name": "dm_order_as_of",
+  "row_count": 24,
+  "invocation_id": "1e8a613a-1b2c-4561-8bb7-76d3045b1e13",
+  "loaded_at": "2026-08-21 15:12:42.193000"
+ },
+ {
+  "model_name": "dim_order",
+  "row_count": 8,
+  "invocation_id": "1e8a613a-1b2c-4561-8bb7-76d3045b1e13",
+  "loaded_at": "2026-08-21 15:12:42.143000"
+ },
+ {
+  "model_name": "fact_order_change",
+  "row_count": 21,
+  "invocation_id": "1e8a613a-1b2c-4561-8bb7-76d3045b1e13",
+  "loaded_at": "2026-08-21 15:12:41.516000"
+ },
+ {
+  "model_name": "dim_customer",
+  "row_count": 5,
+  "invocation_id": "1e8a613a-1b2c-4561-8bb7-76d3045b1e13",
+  "loaded_at": "2026-08-21 15:12:41.516000"
+ },
+ {
+  "model_name": "dm_open_orders",
+  "row_count": 5,
+  "invocation_id": "163a4c68-ef44-4cbf-ab64-c1d2d16f23cc",
+  "loaded_at": "2026-08-21 15:12:36.519000"
+ },
+ {
+  "model_name": "dm_order_as_of",
+  "row_count": 16,
+  "invocation_id": "163a4c68-ef44-4cbf-ab64-c1d2d16f23cc",
+  "loaded_at": "2026-08-21 15:12:36.068000"
+ },
+ {
+  "model_name": "dim_order",
+  "row_count": 7,
+  "invocation_id": "163a4c68-ef44-4cbf-ab64-c1d2d16f23cc",
+  "loaded_at": "2026-08-21 15:12:36.029000"
+ },
+ {
+  "model_name": "dim_customer",
+  "row_count": 5,
+  "invocation_id": "163a4c68-ef44-4cbf-ab64-c1d2d16f23cc",
+  "loaded_at": "2026-08-21 15:12:35.426000"
+ },
+ {
+  "model_name": "fact_order_change",
+  "row_count": 16,
+  "invocation_id": "163a4c68-ef44-4cbf-ab64-c1d2d16f23cc",
+  "loaded_at": "2026-08-21 15:12:35.425000"
+ },
+ {
+  "model_name": "dm_open_orders",
+  "row_count": 4,
+  "invocation_id": "99f89635-f2e5-439c-8806-8b2f2787d140",
+  "loaded_at": "2026-08-21 15:12:30.123000"
+ },
+ {
+  "model_name": "dm_order_as_of",
+  "row_count": 9,
+  "invocation_id": "99f89635-f2e5-439c-8806-8b2f2787d140",
+  "loaded_at": "2026-08-21 15:12:29.625000"
+ },
+ {
+  "model_name": "dim_order",
+  "row_count": 5,
+  "invocation_id": "99f89635-f2e5-439c-8806-8b2f2787d140",
+  "loaded_at": "2026-08-21 15:12:29.619000"
+ },
+ {
+  "model_name": "dim_customer",
+  "row_count": 5,
+  "invocation_id": "99f89635-f2e5-439c-8806-8b2f2787d140",
+  "loaded_at": "2026-08-21 15:12:28.974000"
+ },
+ {
+  "model_name": "fact_order_change",
+  "row_count": 11,
+  "invocation_id": "99f89635-f2e5-439c-8806-8b2f2787d140",
+  "loaded_at": "2026-08-21 15:12:28.972000"
+ },
+ {
+  "model_name": "dm_open_orders",
+  "row_count": 4,
+  "invocation_id": "3a4998ae-3bd6-4e2c-9b69-fa23c68d11d5",
+  "loaded_at": "2026-08-21 15:12:23.607000"
+ },
+ {
+  "model_name": "dim_order",
+  "row_count": 4,
+  "invocation_id": "3a4998ae-3bd6-4e2c-9b69-fa23c68d11d5",
+  "loaded_at": "2026-08-21 15:12:23.088000"
+ },
+ {
+  "model_name": "dm_order_as_of",
+  "row_count": 4,
+  "invocation_id": "3a4998ae-3bd6-4e2c-9b69-fa23c68d11d5",
+  "loaded_at": "2026-08-21 15:12:23.079000"
+ },
+ {
+  "model_name": "fact_order_change",
+  "row_count": 5,
+  "invocation_id": "3a4998ae-3bd6-4e2c-9b69-fa23c68d11d5",
+  "loaded_at": "2026-08-21 15:12:22.442000"
  },
  {
   "model_name": "dim_customer",
   "row_count": 4,
-  "invocation_id": "701ce4a0-8937-4456-be88-3187c115032b",
-  "loaded_at": "2026-08-21 18:45:26.327000"
+  "invocation_id": "3a4998ae-3bd6-4e2c-9b69-fa23c68d11d5",
+  "loaded_at": "2026-08-21 15:12:22.440000"
+ },
+ {
+  "model_name": "dm_open_orders",
+  "row_count": 0,
+  "invocation_id": "b4d4dc52-1cf7-44d9-a99e-5a211eeb55b0",
+  "loaded_at": "2026-08-21 15:12:15.595000"
+ },
+ {
+  "model_name": "dm_order_as_of",
+  "row_count": 0,
+  "invocation_id": "b4d4dc52-1cf7-44d9-a99e-5a211eeb55b0",
+  "loaded_at": "2026-08-21 15:12:15.060000"
+ },
+ {
+  "model_name": "dim_order",
+  "row_count": 0,
+  "invocation_id": "b4d4dc52-1cf7-44d9-a99e-5a211eeb55b0",
+  "loaded_at": "2026-08-21 15:12:15.011000"
+ },
+ {
+  "model_name": "fact_order_change",
+  "row_count": 0,
+  "invocation_id": "b4d4dc52-1cf7-44d9-a99e-5a211eeb55b0",
+  "loaded_at": "2026-08-21 15:12:14.327000"
+ },
+ {
+  "model_name": "dim_customer",
+  "row_count": 0,
+  "invocation_id": "b4d4dc52-1cf7-44d9-a99e-5a211eeb55b0",
+  "loaded_at": "2026-08-21 15:12:14.326000"
+ },
+ {
+  "model_name": "dm_open_orders",
+  "row_count": 4,
+  "invocation_id": "7d62524c-3f90-46d0-a04a-3820d9264ce6",
+  "loaded_at": "2026-08-21 15:11:56.420000"
+ },
+ {
+  "model_name": "dim_order",
+  "row_count": 4,
+  "invocation_id": "7d62524c-3f90-46d0-a04a-3820d9264ce6",
+  "loaded_at": "2026-08-21 15:11:55.494000"
+ },
+ {
+  "model_name": "dm_order_as_of",
+  "row_count": 4,
+  "invocation_id": "7d62524c-3f90-46d0-a04a-3820d9264ce6",
+  "loaded_at": "2026-08-21 15:11:55.453000"
+ },
+ {
+  "model_name": "fact_order_change",
+  "row_count": 5,
+  "invocation_id": "7d62524c-3f90-46d0-a04a-3820d9264ce6",
+  "loaded_at": "2026-08-21 15:11:54.630000"
+ },
+ {
+  "model_name": "dim_customer",
+  "row_count": 4,
+  "invocation_id": "7d62524c-3f90-46d0-a04a-3820d9264ce6",
+  "loaded_at": "2026-08-21 15:11:54.629000"
+ },
+ {
+  "model_name": "dm_open_orders",
+  "row_count": 0,
+  "invocation_id": "5c0b17a7-adfd-49db-a773-2c72a7d72753",
+  "loaded_at": "2026-08-21 15:11:46.880000"
+ },
+ {
+  "model_name": "dm_order_as_of",
+  "row_count": 0,
+  "invocation_id": "5c0b17a7-adfd-49db-a773-2c72a7d72753",
+  "loaded_at": "2026-08-21 15:11:46.117000"
+ },
+ {
+  "model_name": "dim_order",
+  "row_count": 0,
+  "invocation_id": "5c0b17a7-adfd-49db-a773-2c72a7d72753",
+  "loaded_at": "2026-08-21 15:11:46.103000"
+ },
+ {
+  "model_name": "dim_customer",
+  "row_count": 0,
+  "invocation_id": "5c0b17a7-adfd-49db-a773-2c72a7d72753",
+  "loaded_at": "2026-08-21 15:11:43.997000"
+ },
+ {
+  "model_name": "fact_order_change",
+  "row_count": 0,
+  "invocation_id": "5c0b17a7-adfd-49db-a773-2c72a7d72753",
+  "loaded_at": "2026-08-21 15:11:43.996000"
+ },
+ {
+  "model_name": "dm_open_orders",
+  "row_count": 5,
+  "invocation_id": "ee781a2e-6539-4e3a-9673-5c7c02c62c47",
+  "loaded_at": "2026-08-21 15:11:17.352000"
+ },
+ {
+  "model_name": "dm_order_as_of",
+  "row_count": 44,
+  "invocation_id": "ee781a2e-6539-4e3a-9673-5c7c02c62c47",
+  "loaded_at": "2026-08-21 15:11:16.821000"
+ },
+ {
+  "model_name": "dim_order",
+  "row_count": 10,
+  "invocation_id": "ee781a2e-6539-4e3a-9673-5c7c02c62c47",
+  "loaded_at": "2026-08-21 15:11:16.772000"
+ },
+ {
+  "model_name": "dim_customer",
+  "row_count": 5,
+  "invocation_id": "ee781a2e-6539-4e3a-9673-5c7c02c62c47",
+  "loaded_at": "2026-08-21 15:11:16.087000"
+ },
+ {
+  "model_name": "fact_order_change",
+  "row_count": 30,
+  "invocation_id": "ee781a2e-6539-4e3a-9673-5c7c02c62c47",
+  "loaded_at": "2026-08-21 15:11:16.080000"
+ },
+ {
+  "model_name": "dm_open_orders",
+  "row_count": 6,
+  "invocation_id": "f166b2cb-8310-45b0-bf37-8566dcea9c4e",
+  "loaded_at": "2026-08-21 15:11:09.421000"
+ },
+ {
+  "model_name": "dm_order_as_of",
+  "row_count": 34,
+  "invocation_id": "f166b2cb-8310-45b0-bf37-8566dcea9c4e",
+  "loaded_at": "2026-08-21 15:11:08.993000"
+ },
+ {
+  "model_name": "dim_order",
+  "row_count": 10,
+  "invocation_id": "f166b2cb-8310-45b0-bf37-8566dcea9c4e",
+  "loaded_at": "2026-08-21 15:11:08.942000"
+ },
+ {
+  "model_name": "dim_customer",
+  "row_count": 5,
+  "invocation_id": "f166b2cb-8310-45b0-bf37-8566dcea9c4e",
+  "loaded_at": "2026-08-21 15:11:08.353000"
+ },
+ {
+  "model_name": "fact_order_change",
+  "row_count": 26,
+  "invocation_id": "f166b2cb-8310-45b0-bf37-8566dcea9c4e",
+  "loaded_at": "2026-08-21 15:11:08.351000"
+ },
+ {
+  "model_name": "dm_open_orders",
+  "row_count": 5,
+  "invocation_id": "804d32f8-021b-444e-8140-bda0560bfdf5",
+  "loaded_at": "2026-08-21 15:11:03.273000"
+ },
+ {
+  "model_name": "dim_order",
+  "row_count": 8,
+  "invocation_id": "804d32f8-021b-444e-8140-bda0560bfdf5",
+  "loaded_at": "2026-08-21 15:11:02.820000"
+ },
+ {
+  "model_name": "dm_order_as_of",
+  "row_count": 24,
+  "invocation_id": "804d32f8-021b-444e-8140-bda0560bfdf5",
+  "loaded_at": "2026-08-21 15:11:02.763000"
+ },
+ {
+  "model_name": "dim_customer",
+  "row_count": 5,
+  "invocation_id": "804d32f8-021b-444e-8140-bda0560bfdf5",
+  "loaded_at": "2026-08-21 15:11:02.098000"
+ },
+ {
+  "model_name": "fact_order_change",
+  "row_count": 21,
+  "invocation_id": "804d32f8-021b-444e-8140-bda0560bfdf5",
+  "loaded_at": "2026-08-21 15:11:02.096000"
+ },
+ {
+  "model_name": "dm_open_orders",
+  "row_count": 5,
+  "invocation_id": "3cc4d3d2-d5ac-496c-a28a-ade0cf7821cc",
+  "loaded_at": "2026-08-21 15:10:56.850000"
+ },
+ {
+  "model_name": "dm_order_as_of",
+  "row_count": 16,
+  "invocation_id": "3cc4d3d2-d5ac-496c-a28a-ade0cf7821cc",
+  "loaded_at": "2026-08-21 15:10:56.361000"
+ },
+ {
+  "model_name": "dim_order",
+  "row_count": 7,
+  "invocation_id": "3cc4d3d2-d5ac-496c-a28a-ade0cf7821cc",
+  "loaded_at": "2026-08-21 15:10:56.323000"
+ },
+ {
+  "model_name": "fact_order_change",
+  "row_count": 16,
+  "invocation_id": "3cc4d3d2-d5ac-496c-a28a-ade0cf7821cc",
+  "loaded_at": "2026-08-21 15:10:55.709000"
+ },
+ {
+  "model_name": "dim_customer",
+  "row_count": 5,
+  "invocation_id": "3cc4d3d2-d5ac-496c-a28a-ade0cf7821cc",
+  "loaded_at": "2026-08-21 15:10:55.706000"
+ },
+ {
+  "model_name": "dm_open_orders",
+  "row_count": 4,
+  "invocation_id": "fb842419-bfc2-445c-b8e8-fdd6760b4b5c",
+  "loaded_at": "2026-08-21 15:10:50.280000"
+ },
+ {
+  "model_name": "dim_order",
+  "row_count": 5,
+  "invocation_id": "fb842419-bfc2-445c-b8e8-fdd6760b4b5c",
+  "loaded_at": "2026-08-21 15:10:49.752000"
+ },
+ {
+  "model_name": "dm_order_as_of",
+  "row_count": 9,
+  "invocation_id": "fb842419-bfc2-445c-b8e8-fdd6760b4b5c",
+  "loaded_at": "2026-08-21 15:10:49.751000"
+ },
+ {
+  "model_name": "dim_customer",
+  "row_count": 5,
+  "invocation_id": "fb842419-bfc2-445c-b8e8-fdd6760b4b5c",
+  "loaded_at": "2026-08-21 15:10:49.157000"
+ },
+ {
+  "model_name": "fact_order_change",
+  "row_count": 11,
+  "invocation_id": "fb842419-bfc2-445c-b8e8-fdd6760b4b5c",
+  "loaded_at": "2026-08-21 15:10:49.151000"
+ },
+ {
+  "model_name": "dm_open_orders",
+  "row_count": 4,
+  "invocation_id": "e7f8ba70-519b-460b-8cec-bc86d8ab3730",
+  "loaded_at": "2026-08-21 15:10:31.370000"
+ },
+ {
+  "model_name": "dim_order",
+  "row_count": 4,
+  "invocation_id": "e7f8ba70-519b-460b-8cec-bc86d8ab3730",
+  "loaded_at": "2026-08-21 15:10:31.096000"
+ },
+ {
+  "model_name": "dm_order_as_of",
+  "row_count": 4,
+  "invocation_id": "e7f8ba70-519b-460b-8cec-bc86d8ab3730",
+  "loaded_at": "2026-08-21 15:10:31.089000"
+ },
+ {
+  "model_name": "dim_customer",
+  "row_count": 4,
+  "invocation_id": "e7f8ba70-519b-460b-8cec-bc86d8ab3730",
+  "loaded_at": "2026-08-21 15:10:30.796000"
+ },
+ {
+  "model_name": "fact_order_change",
+  "row_count": 5,
+  "invocation_id": "e7f8ba70-519b-460b-8cec-bc86d8ab3730",
+  "loaded_at": "2026-08-21 15:10:30.788000"
+ },
+ {
+  "model_name": "dm_open_orders",
+  "row_count": 0,
+  "invocation_id": "8b79dedf-bed1-4ac7-bbfb-b7dffa11840e",
+  "loaded_at": "2026-08-21 15:10:28.217000"
+ },
+ {
+  "model_name": "dm_order_as_of",
+  "row_count": 0,
+  "invocation_id": "8b79dedf-bed1-4ac7-bbfb-b7dffa11840e",
+  "loaded_at": "2026-08-21 15:10:27.968000"
+ },
+ {
+  "model_name": "dim_order",
+  "row_count": 0,
+  "invocation_id": "8b79dedf-bed1-4ac7-bbfb-b7dffa11840e",
+  "loaded_at": "2026-08-21 15:10:27.930000"
+ },
+ {
+  "model_name": "dim_customer",
+  "row_count": 0,
+  "invocation_id": "8b79dedf-bed1-4ac7-bbfb-b7dffa11840e",
+  "loaded_at": "2026-08-21 15:10:27.620000"
+ },
+ {
+  "model_name": "fact_order_change",
+  "row_count": 0,
+  "invocation_id": "8b79dedf-bed1-4ac7-bbfb-b7dffa11840e",
+  "loaded_at": "2026-08-21 15:10:27.620000"
+ },
+ {
+  "model_name": "dm_open_orders",
+  "row_count": 5,
+  "invocation_id": "58106537-8af5-4d55-b635-835d64cd1b74",
+  "loaded_at": "2026-08-21 15:10:13.846000"
+ },
+ {
+  "model_name": "dim_order",
+  "row_count": 10,
+  "invocation_id": "58106537-8af5-4d55-b635-835d64cd1b74",
+  "loaded_at": "2026-08-21 15:10:13.601000"
+ },
+ {
+  "model_name": "dm_order_as_of",
+  "row_count": 44,
+  "invocation_id": "58106537-8af5-4d55-b635-835d64cd1b74",
+  "loaded_at": "2026-08-21 15:10:13.593000"
+ },
+ {
+  "model_name": "dim_customer",
+  "row_count": 5,
+  "invocation_id": "58106537-8af5-4d55-b635-835d64cd1b74",
+  "loaded_at": "2026-08-21 15:10:13.224000"
+ },
+ {
+  "model_name": "fact_order_change",
+  "row_count": 30,
+  "invocation_id": "58106537-8af5-4d55-b635-835d64cd1b74",
+  "loaded_at": "2026-08-21 15:10:13.222000"
+ },
+ {
+  "model_name": "dm_open_orders",
+  "row_count": 6,
+  "invocation_id": "53e172d5-3eb1-460f-ad33-193ccbf1105b",
+  "loaded_at": "2026-08-21 15:10:09.376000"
+ },
+ {
+  "model_name": "dm_order_as_of",
+  "row_count": 34,
+  "invocation_id": "53e172d5-3eb1-460f-ad33-193ccbf1105b",
+  "loaded_at": "2026-08-21 15:10:08.945000"
+ },
+ {
+  "model_name": "dim_order",
+  "row_count": 10,
+  "invocation_id": "53e172d5-3eb1-460f-ad33-193ccbf1105b",
+  "loaded_at": "2026-08-21 15:10:08.945000"
+ },
+ {
+  "model_name": "dim_customer",
+  "row_count": 5,
+  "invocation_id": "53e172d5-3eb1-460f-ad33-193ccbf1105b",
+  "loaded_at": "2026-08-21 15:10:08.416000"
+ },
+ {
+  "model_name": "fact_order_change",
+  "row_count": 26,
+  "invocation_id": "53e172d5-3eb1-460f-ad33-193ccbf1105b",
+  "loaded_at": "2026-08-21 15:10:08.415000"
+ },
+ {
+  "model_name": "dm_open_orders",
+  "row_count": 5,
+  "invocation_id": "ce764223-d50d-4b42-b3a5-586aad462a91",
+  "loaded_at": "2026-08-21 15:10:03.200000"
+ },
+ {
+  "model_name": "dm_order_as_of",
+  "row_count": 24,
+  "invocation_id": "ce764223-d50d-4b42-b3a5-586aad462a91",
+  "loaded_at": "2026-08-21 15:10:02.818000"
+ },
+ {
+  "model_name": "dim_order",
+  "row_count": 8,
+  "invocation_id": "ce764223-d50d-4b42-b3a5-586aad462a91",
+  "loaded_at": "2026-08-21 15:10:02.777000"
+ },
+ {
+  "model_name": "dim_customer",
+  "row_count": 5,
+  "invocation_id": "ce764223-d50d-4b42-b3a5-586aad462a91",
+  "loaded_at": "2026-08-21 15:10:02.242000"
+ },
+ {
+  "model_name": "fact_order_change",
+  "row_count": 21,
+  "invocation_id": "ce764223-d50d-4b42-b3a5-586aad462a91",
+  "loaded_at": "2026-08-21 15:10:02.242000"
+ },
+ {
+  "model_name": "dm_open_orders",
+  "row_count": 5,
+  "invocation_id": "f97d49f2-df47-4435-9c75-8432cc211846",
+  "loaded_at": "2026-08-21 15:09:57.654000"
+ },
+ {
+  "model_name": "dm_order_as_of",
+  "row_count": 16,
+  "invocation_id": "f97d49f2-df47-4435-9c75-8432cc211846",
+  "loaded_at": "2026-08-21 15:09:57.215000"
+ },
+ {
+  "model_name": "dim_order",
+  "row_count": 7,
+  "invocation_id": "f97d49f2-df47-4435-9c75-8432cc211846",
+  "loaded_at": "2026-08-21 15:09:57.167000"
+ },
+ {
+  "model_name": "dim_customer",
+  "row_count": 5,
+  "invocation_id": "f97d49f2-df47-4435-9c75-8432cc211846",
+  "loaded_at": "2026-08-21 15:09:56.607000"
+ },
+ {
+  "model_name": "fact_order_change",
+  "row_count": 16,
+  "invocation_id": "f97d49f2-df47-4435-9c75-8432cc211846",
+  "loaded_at": "2026-08-21 15:09:56.605000"
+ },
+ {
+  "model_name": "dm_open_orders",
+  "row_count": 4,
+  "invocation_id": "0919a5e4-71db-4bc3-9e8c-18d8a709813d",
+  "loaded_at": "2026-08-21 15:09:51.679000"
+ },
+ {
+  "model_name": "dim_order",
+  "row_count": 5,
+  "invocation_id": "0919a5e4-71db-4bc3-9e8c-18d8a709813d",
+  "loaded_at": "2026-08-21 15:09:51.205000"
+ },
+ {
+  "model_name": "dm_order_as_of",
+  "row_count": 9,
+  "invocation_id": "0919a5e4-71db-4bc3-9e8c-18d8a709813d",
+  "loaded_at": "2026-08-21 15:09:51.205000"
+ },
+ {
+  "model_name": "fact_order_change",
+  "row_count": 11,
+  "invocation_id": "0919a5e4-71db-4bc3-9e8c-18d8a709813d",
+  "loaded_at": "2026-08-21 15:09:50.665000"
+ },
+ {
+  "model_name": "dim_customer",
+  "row_count": 5,
+  "invocation_id": "0919a5e4-71db-4bc3-9e8c-18d8a709813d",
+  "loaded_at": "2026-08-21 15:09:50.665000"
+ },
+ {
+  "model_name": "dm_open_orders",
+  "row_count": 4,
+  "invocation_id": "cbd72836-1e2d-4b30-bebc-781ded491a8d",
+  "loaded_at": "2026-08-21 15:09:46.755000"
+ },
+ {
+  "model_name": "dim_order",
+  "row_count": 4,
+  "invocation_id": "cbd72836-1e2d-4b30-bebc-781ded491a8d",
+  "loaded_at": "2026-08-21 15:09:46.541000"
+ },
+ {
+  "model_name": "dm_order_as_of",
+  "row_count": 4,
+  "invocation_id": "cbd72836-1e2d-4b30-bebc-781ded491a8d",
+  "loaded_at": "2026-08-21 15:09:46.532000"
+ },
+ {
+  "model_name": "dim_customer",
+  "row_count": 4,
+  "invocation_id": "cbd72836-1e2d-4b30-bebc-781ded491a8d",
+  "loaded_at": "2026-08-21 15:09:46.281000"
+ },
+ {
+  "model_name": "fact_order_change",
+  "row_count": 5,
+  "invocation_id": "cbd72836-1e2d-4b30-bebc-781ded491a8d",
+  "loaded_at": "2026-08-21 15:09:46.276000"
+ },
+ {
+  "model_name": "dm_open_orders",
+  "row_count": 0,
+  "invocation_id": "7242bba5-43fe-4464-afe3-6310d299f484",
+  "loaded_at": "2026-08-21 15:09:43.144000"
+ },
+ {
+  "model_name": "dm_order_as_of",
+  "row_count": 0,
+  "invocation_id": "7242bba5-43fe-4464-afe3-6310d299f484",
+  "loaded_at": "2026-08-21 15:09:42.908000"
+ },
+ {
+  "model_name": "dim_order",
+  "row_count": 0,
+  "invocation_id": "7242bba5-43fe-4464-afe3-6310d299f484",
+  "loaded_at": "2026-08-21 15:09:42.875000"
+ },
+ {
+  "model_name": "fact_order_change",
+  "row_count": 0,
+  "invocation_id": "7242bba5-43fe-4464-afe3-6310d299f484",
+  "loaded_at": "2026-08-21 15:09:42.592000"
+ },
+ {
+  "model_name": "dim_customer",
+  "row_count": 0,
+  "invocation_id": "7242bba5-43fe-4464-afe3-6310d299f484",
+  "loaded_at": "2026-08-21 15:09:42.592000"
+ },
+ {
+  "model_name": "dm_open_orders",
+  "row_count": 5,
+  "invocation_id": "b35ecef5-0ad3-4040-88a4-3364f2f3df98",
+  "loaded_at": "2026-08-21 15:07:29.134000"
+ },
+ {
+  "model_name": "dm_order_as_of",
+  "row_count": 44,
+  "invocation_id": "b35ecef5-0ad3-4040-88a4-3364f2f3df98",
+  "loaded_at": "2026-08-21 15:07:28.891000"
+ },
+ {
+  "model_name": "dim_order",
+  "row_count": 10,
+  "invocation_id": "b35ecef5-0ad3-4040-88a4-3364f2f3df98",
+  "loaded_at": "2026-08-21 15:07:28.868000"
+ },
+ {
+  "model_name": "dim_customer",
+  "row_count": 5,
+  "invocation_id": "b35ecef5-0ad3-4040-88a4-3364f2f3df98",
+  "loaded_at": "2026-08-21 15:07:28.497000"
+ },
+ {
+  "model_name": "fact_order_change",
+  "row_count": 30,
+  "invocation_id": "b35ecef5-0ad3-4040-88a4-3364f2f3df98",
+  "loaded_at": "2026-08-21 15:07:28.495000"
+ },
+ {
+  "model_name": "dm_open_orders",
+  "row_count": 6,
+  "invocation_id": "a27f6727-b65c-4851-be75-4c295a5729f9",
+  "loaded_at": "2026-08-21 15:07:24.787000"
+ },
+ {
+  "model_name": "dm_order_as_of",
+  "row_count": 34,
+  "invocation_id": "a27f6727-b65c-4851-be75-4c295a5729f9",
+  "loaded_at": "2026-08-21 15:07:24.146000"
+ },
+ {
+  "model_name": "dim_order",
+  "row_count": 10,
+  "invocation_id": "a27f6727-b65c-4851-be75-4c295a5729f9",
+  "loaded_at": "2026-08-21 15:07:24.093000"
+ },
+ {
+  "model_name": "fact_order_change",
+  "row_count": 26,
+  "invocation_id": "a27f6727-b65c-4851-be75-4c295a5729f9",
+  "loaded_at": "2026-08-21 15:07:23.429000"
+ },
+ {
+  "model_name": "dim_customer",
+  "row_count": 5,
+  "invocation_id": "a27f6727-b65c-4851-be75-4c295a5729f9",
+  "loaded_at": "2026-08-21 15:07:23.429000"
+ },
+ {
+  "model_name": "dm_open_orders",
+  "row_count": 5,
+  "invocation_id": "0dbf45b6-54e0-4260-a7f9-b7b5e561d091",
+  "loaded_at": "2026-08-21 15:07:14.728000"
+ },
+ {
+  "model_name": "dm_order_as_of",
+  "row_count": 24,
+  "invocation_id": "0dbf45b6-54e0-4260-a7f9-b7b5e561d091",
+  "loaded_at": "2026-08-21 15:07:14.195000"
+ },
+ {
+  "model_name": "dim_order",
+  "row_count": 8,
+  "invocation_id": "0dbf45b6-54e0-4260-a7f9-b7b5e561d091",
+  "loaded_at": "2026-08-21 15:07:14.183000"
+ },
+ {
+  "model_name": "dim_customer",
+  "row_count": 5,
+  "invocation_id": "0dbf45b6-54e0-4260-a7f9-b7b5e561d091",
+  "loaded_at": "2026-08-21 15:07:13.478000"
+ },
+ {
+  "model_name": "fact_order_change",
+  "row_count": 21,
+  "invocation_id": "0dbf45b6-54e0-4260-a7f9-b7b5e561d091",
+  "loaded_at": "2026-08-21 15:07:13.478000"
+ },
+ {
+  "model_name": "dm_open_orders",
+  "row_count": 5,
+  "invocation_id": "985b5dc8-4dde-4b54-863e-918e9998220b",
+  "loaded_at": "2026-08-21 15:07:08.457000"
+ },
+ {
+  "model_name": "dm_order_as_of",
+  "row_count": 16,
+  "invocation_id": "985b5dc8-4dde-4b54-863e-918e9998220b",
+  "loaded_at": "2026-08-21 15:07:08.011000"
+ },
+ {
+  "model_name": "dim_order",
+  "row_count": 7,
+  "invocation_id": "985b5dc8-4dde-4b54-863e-918e9998220b",
+  "loaded_at": "2026-08-21 15:07:07.956000"
+ },
+ {
+  "model_name": "fact_order_change",
+  "row_count": 16,
+  "invocation_id": "985b5dc8-4dde-4b54-863e-918e9998220b",
+  "loaded_at": "2026-08-21 15:07:07.375000"
+ },
+ {
+  "model_name": "dim_customer",
+  "row_count": 5,
+  "invocation_id": "985b5dc8-4dde-4b54-863e-918e9998220b",
+  "loaded_at": "2026-08-21 15:07:07.375000"
+ },
+ {
+  "model_name": "dm_open_orders",
+  "row_count": 4,
+  "invocation_id": "5a15beae-dfa7-4383-b2ba-46003db9cb0c",
+  "loaded_at": "2026-08-21 15:07:02.453000"
+ },
+ {
+  "model_name": "dim_order",
+  "row_count": 5,
+  "invocation_id": "5a15beae-dfa7-4383-b2ba-46003db9cb0c",
+  "loaded_at": "2026-08-21 15:07:01.686000"
+ },
+ {
+  "model_name": "dm_order_as_of",
+  "row_count": 9,
+  "invocation_id": "5a15beae-dfa7-4383-b2ba-46003db9cb0c",
+  "loaded_at": "2026-08-21 15:07:01.647000"
+ },
+ {
+  "model_name": "dim_customer",
+  "row_count": 5,
+  "invocation_id": "5a15beae-dfa7-4383-b2ba-46003db9cb0c",
+  "loaded_at": "2026-08-21 15:07:01.114000"
+ },
+ {
+  "model_name": "fact_order_change",
+  "row_count": 11,
+  "invocation_id": "5a15beae-dfa7-4383-b2ba-46003db9cb0c",
+  "loaded_at": "2026-08-21 15:07:01.111000"
+ },
+ {
+  "model_name": "dm_open_orders",
+  "row_count": 4,
+  "invocation_id": "1a6a1338-f8ed-47ed-bf20-d2a00fbb7692",
+  "loaded_at": "2026-08-21 15:06:58.132000"
+ },
+ {
+  "model_name": "dm_order_as_of",
+  "row_count": 4,
+  "invocation_id": "1a6a1338-f8ed-47ed-bf20-d2a00fbb7692",
+  "loaded_at": "2026-08-21 15:06:57.858000"
+ },
+ {
+  "model_name": "dim_order",
+  "row_count": 4,
+  "invocation_id": "1a6a1338-f8ed-47ed-bf20-d2a00fbb7692",
+  "loaded_at": "2026-08-21 15:06:57.837000"
+ },
+ {
+  "model_name": "dim_customer",
+  "row_count": 4,
+  "invocation_id": "1a6a1338-f8ed-47ed-bf20-d2a00fbb7692",
+  "loaded_at": "2026-08-21 15:06:57.487000"
+ },
+ {
+  "model_name": "fact_order_change",
+  "row_count": 5,
+  "invocation_id": "1a6a1338-f8ed-47ed-bf20-d2a00fbb7692",
+  "loaded_at": "2026-08-21 15:06:57.485000"
+ },
+ {
+  "model_name": "dm_open_orders",
+  "row_count": 0,
+  "invocation_id": "03f102d9-d6f9-4e75-825d-4bc3474683b2",
+  "loaded_at": "2026-08-21 15:06:44.864000"
+ },
+ {
+  "model_name": "dm_order_as_of",
+  "row_count": 0,
+  "invocation_id": "03f102d9-d6f9-4e75-825d-4bc3474683b2",
+  "loaded_at": "2026-08-21 15:06:44.412000"
+ },
+ {
+  "model_name": "dim_order",
+  "row_count": 0,
+  "invocation_id": "03f102d9-d6f9-4e75-825d-4bc3474683b2",
+  "loaded_at": "2026-08-21 15:06:44.347000"
+ },
+ {
+  "model_name": "fact_order_change",
+  "row_count": 0,
+  "invocation_id": "03f102d9-d6f9-4e75-825d-4bc3474683b2",
+  "loaded_at": "2026-08-21 15:06:43.814000"
+ },
+ {
+  "model_name": "dim_customer",
+  "row_count": 0,
+  "invocation_id": "03f102d9-d6f9-4e75-825d-4bc3474683b2",
+  "loaded_at": "2026-08-21 15:06:43.807000"
+ },
+ {
+  "model_name": "dm_open_orders",
+  "row_count": 5,
+  "invocation_id": "976baffe-50aa-41be-9278-854f651fe644",
+  "loaded_at": "2026-08-21 15:06:27.647000"
+ },
+ {
+  "model_name": "dm_order_as_of",
+  "row_count": 44,
+  "invocation_id": "976baffe-50aa-41be-9278-854f651fe644",
+  "loaded_at": "2026-08-21 15:06:27.240000"
+ },
+ {
+  "model_name": "dim_order",
+  "row_count": 10,
+  "invocation_id": "976baffe-50aa-41be-9278-854f651fe644",
+  "loaded_at": "2026-08-21 15:06:27.198000"
+ },
+ {
+  "model_name": "dim_customer",
+  "row_count": 5,
+  "invocation_id": "976baffe-50aa-41be-9278-854f651fe644",
+  "loaded_at": "2026-08-21 15:06:26.658000"
+ },
+ {
+  "model_name": "fact_order_change",
+  "row_count": 30,
+  "invocation_id": "976baffe-50aa-41be-9278-854f651fe644",
+  "loaded_at": "2026-08-21 15:06:26.657000"
+ },
+ {
+  "model_name": "dm_open_orders",
+  "row_count": 6,
+  "invocation_id": "b3f319d4-00fc-466c-9085-823f5f585a5d",
+  "loaded_at": "2026-08-21 15:06:21.775000"
+ },
+ {
+  "model_name": "dim_order",
+  "row_count": 10,
+  "invocation_id": "b3f319d4-00fc-466c-9085-823f5f585a5d",
+  "loaded_at": "2026-08-21 15:06:21.298000"
+ },
+ {
+  "model_name": "dm_order_as_of",
+  "row_count": 34,
+  "invocation_id": "b3f319d4-00fc-466c-9085-823f5f585a5d",
+  "loaded_at": "2026-08-21 15:06:21.285000"
+ },
+ {
+  "model_name": "dim_customer",
+  "row_count": 5,
+  "invocation_id": "b3f319d4-00fc-466c-9085-823f5f585a5d",
+  "loaded_at": "2026-08-21 15:06:20.732000"
+ },
+ {
+  "model_name": "fact_order_change",
+  "row_count": 26,
+  "invocation_id": "b3f319d4-00fc-466c-9085-823f5f585a5d",
+  "loaded_at": "2026-08-21 15:06:20.731000"
+ },
+ {
+  "model_name": "dm_open_orders",
+  "row_count": 5,
+  "invocation_id": "7578bc87-fa4e-4f87-9f71-b2b9fa58f485",
+  "loaded_at": "2026-08-21 15:06:16.006000"
+ },
+ {
+  "model_name": "dim_order",
+  "row_count": 8,
+  "invocation_id": "7578bc87-fa4e-4f87-9f71-b2b9fa58f485",
+  "loaded_at": "2026-08-21 15:06:15.545000"
+ },
+ {
+  "model_name": "dm_order_as_of",
+  "row_count": 24,
+  "invocation_id": "7578bc87-fa4e-4f87-9f71-b2b9fa58f485",
+  "loaded_at": "2026-08-21 15:06:15.544000"
+ },
+ {
+  "model_name": "fact_order_change",
+  "row_count": 21,
+  "invocation_id": "7578bc87-fa4e-4f87-9f71-b2b9fa58f485",
+  "loaded_at": "2026-08-21 15:06:14.988000"
+ },
+ {
+  "model_name": "dim_customer",
+  "row_count": 5,
+  "invocation_id": "7578bc87-fa4e-4f87-9f71-b2b9fa58f485",
+  "loaded_at": "2026-08-21 15:06:14.988000"
+ },
+ {
+  "model_name": "dm_open_orders",
+  "row_count": 5,
+  "invocation_id": "c356b9d3-78c8-4d85-8e7a-d31fc8d41e03",
+  "loaded_at": "2026-08-21 15:06:08.674000"
+ },
+ {
+  "model_name": "dm_order_as_of",
+  "row_count": 16,
+  "invocation_id": "c356b9d3-78c8-4d85-8e7a-d31fc8d41e03",
+  "loaded_at": "2026-08-21 15:06:08.191000"
+ },
+ {
+  "model_name": "dim_order",
+  "row_count": 7,
+  "invocation_id": "c356b9d3-78c8-4d85-8e7a-d31fc8d41e03",
+  "loaded_at": "2026-08-21 15:06:08.147000"
+ },
+ {
+  "model_name": "dim_customer",
+  "row_count": 5,
+  "invocation_id": "c356b9d3-78c8-4d85-8e7a-d31fc8d41e03",
+  "loaded_at": "2026-08-21 15:06:07.559000"
+ },
+ {
+  "model_name": "fact_order_change",
+  "row_count": 16,
+  "invocation_id": "c356b9d3-78c8-4d85-8e7a-d31fc8d41e03",
+  "loaded_at": "2026-08-21 15:06:07.555000"
+ },
+ {
+  "model_name": "dm_open_orders",
+  "row_count": 4,
+  "invocation_id": "254b3e41-b9fe-4de7-8ad7-6f4e28bab9f1",
+  "loaded_at": "2026-08-21 15:06:02.275000"
+ },
+ {
+  "model_name": "dim_order",
+  "row_count": 5,
+  "invocation_id": "254b3e41-b9fe-4de7-8ad7-6f4e28bab9f1",
+  "loaded_at": "2026-08-21 15:06:01.958000"
+ },
+ {
+  "model_name": "dm_order_as_of",
+  "row_count": 9,
+  "invocation_id": "254b3e41-b9fe-4de7-8ad7-6f4e28bab9f1",
+  "loaded_at": "2026-08-21 15:06:01.951000"
+ },
+ {
+  "model_name": "fact_order_change",
+  "row_count": 11,
+  "invocation_id": "254b3e41-b9fe-4de7-8ad7-6f4e28bab9f1",
+  "loaded_at": "2026-08-21 15:06:01.543000"
+ },
+ {
+  "model_name": "dim_customer",
+  "row_count": 5,
+  "invocation_id": "254b3e41-b9fe-4de7-8ad7-6f4e28bab9f1",
+  "loaded_at": "2026-08-21 15:06:01.538000"
+ },
+ {
+  "model_name": "dm_open_orders",
+  "row_count": 4,
+  "invocation_id": "b311288f-f86e-4215-8b29-8aaa2ad1d16c",
+  "loaded_at": "2026-08-21 15:05:57.797000"
+ },
+ {
+  "model_name": "dm_order_as_of",
+  "row_count": 4,
+  "invocation_id": "b311288f-f86e-4215-8b29-8aaa2ad1d16c",
+  "loaded_at": "2026-08-21 15:05:57.446000"
+ },
+ {
+  "model_name": "dim_order",
+  "row_count": 4,
+  "invocation_id": "b311288f-f86e-4215-8b29-8aaa2ad1d16c",
+  "loaded_at": "2026-08-21 15:05:57.419000"
+ },
+ {
+  "model_name": "dim_customer",
+  "row_count": 4,
+  "invocation_id": "b311288f-f86e-4215-8b29-8aaa2ad1d16c",
+  "loaded_at": "2026-08-21 15:05:56.843000"
+ },
+ {
+  "model_name": "fact_order_change",
+  "row_count": 5,
+  "invocation_id": "b311288f-f86e-4215-8b29-8aaa2ad1d16c",
+  "loaded_at": "2026-08-21 15:05:56.835000"
+ },
+ {
+  "model_name": "dm_open_orders",
+  "row_count": 0,
+  "invocation_id": "7ced20e0-3d9e-4dd3-89ce-bd12db00b196",
+  "loaded_at": "2026-08-21 15:05:51.419000"
+ },
+ {
+  "model_name": "dm_order_as_of",
+  "row_count": 0,
+  "invocation_id": "7ced20e0-3d9e-4dd3-89ce-bd12db00b196",
+  "loaded_at": "2026-08-21 15:05:50.930000"
+ },
+ {
+  "model_name": "dim_order",
+  "row_count": 0,
+  "invocation_id": "7ced20e0-3d9e-4dd3-89ce-bd12db00b196",
+  "loaded_at": "2026-08-21 15:05:50.863000"
+ },
+ {
+  "model_name": "fact_order_change",
+  "row_count": 0,
+  "invocation_id": "7ced20e0-3d9e-4dd3-89ce-bd12db00b196",
+  "loaded_at": "2026-08-21 15:05:50.249000"
+ },
+ {
+  "model_name": "dim_customer",
+  "row_count": 0,
+  "invocation_id": "7ced20e0-3d9e-4dd3-89ce-bd12db00b196",
+  "loaded_at": "2026-08-21 15:05:50.245000"
+ },
+ {
+  "model_name": "dm_open_orders",
+  "row_count": 5,
+  "invocation_id": "5c80b4d5-8235-4721-b2a1-a828fe9c4f5b",
+  "loaded_at": "2026-08-21 15:05:23.531000"
+ },
+ {
+  "model_name": "dim_order",
+  "row_count": 10,
+  "invocation_id": "5c80b4d5-8235-4721-b2a1-a828fe9c4f5b",
+  "loaded_at": "2026-08-21 15:05:23.019000"
+ },
+ {
+  "model_name": "dm_order_as_of",
+  "row_count": 44,
+  "invocation_id": "5c80b4d5-8235-4721-b2a1-a828fe9c4f5b",
+  "loaded_at": "2026-08-21 15:05:22.988000"
+ },
+ {
+  "model_name": "dim_customer",
+  "row_count": 5,
+  "invocation_id": "5c80b4d5-8235-4721-b2a1-a828fe9c4f5b",
+  "loaded_at": "2026-08-21 15:05:22.392000"
+ },
+ {
+  "model_name": "fact_order_change",
+  "row_count": 30,
+  "invocation_id": "5c80b4d5-8235-4721-b2a1-a828fe9c4f5b",
+  "loaded_at": "2026-08-21 15:05:22.390000"
+ },
+ {
+  "model_name": "dm_open_orders",
+  "row_count": 5,
+  "invocation_id": "829f45e4-8a5c-4e43-a419-6f3e614f8de9",
+  "loaded_at": "2026-08-21 15:04:53.495000"
+ },
+ {
+  "model_name": "dm_order_as_of",
+  "row_count": 44,
+  "invocation_id": "829f45e4-8a5c-4e43-a419-6f3e614f8de9",
+  "loaded_at": "2026-08-21 15:04:53.209000"
+ },
+ {
+  "model_name": "dim_order",
+  "row_count": 10,
+  "invocation_id": "829f45e4-8a5c-4e43-a419-6f3e614f8de9",
+  "loaded_at": "2026-08-21 15:04:53.135000"
+ },
+ {
+  "model_name": "fact_order_change",
+  "row_count": 30,
+  "invocation_id": "829f45e4-8a5c-4e43-a419-6f3e614f8de9",
+  "loaded_at": "2026-08-21 15:04:52.733000"
+ },
+ {
+  "model_name": "dim_customer",
+  "row_count": 5,
+  "invocation_id": "829f45e4-8a5c-4e43-a419-6f3e614f8de9",
+  "loaded_at": "2026-08-21 15:04:52.733000"
+ },
+ {
+  "model_name": "dm_open_orders",
+  "row_count": 6,
+  "invocation_id": "f84cde2e-9779-4b4d-812b-a7913fa1c758",
+  "loaded_at": "2026-08-21 15:04:49.107000"
+ },
+ {
+  "model_name": "dm_order_as_of",
+  "row_count": 34,
+  "invocation_id": "f84cde2e-9779-4b4d-812b-a7913fa1c758",
+  "loaded_at": "2026-08-21 15:04:48.719000"
+ },
+ {
+  "model_name": "dim_order",
+  "row_count": 10,
+  "invocation_id": "f84cde2e-9779-4b4d-812b-a7913fa1c758",
+  "loaded_at": "2026-08-21 15:04:48.693000"
+ },
+ {
+  "model_name": "dim_customer",
+  "row_count": 5,
+  "invocation_id": "f84cde2e-9779-4b4d-812b-a7913fa1c758",
+  "loaded_at": "2026-08-21 15:04:48.322000"
+ },
+ {
+  "model_name": "fact_order_change",
+  "row_count": 26,
+  "invocation_id": "f84cde2e-9779-4b4d-812b-a7913fa1c758",
+  "loaded_at": "2026-08-21 15:04:48.322000"
  }
 ]

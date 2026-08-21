@@ -1,14 +1,26 @@
 version: 2
 
 models:
-  - name: trn_tbl_customer
-    description: One verdict per incoming record.
+  - name: trn_tbl_order_change
+    description: The change log, deduped by tx_seq, ordered by tx_seq.
     columns:
-      - name: record_key
+      - name: tx_seq
         data_tests: [unique, not_null]
-      - name: status
+      - name: op
         data_tests:
           - not_null
           - accepted_values:
               arguments:
-                values: [new, duplicate_of_master, duplicate_within_incoming]
+                values: [I, U, D]
+      - name: status
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: [pending, paid, shipped, cancelled]
+  - name: trn_tbl_order_current
+    description: One row per order_id, latest attributes, sticky deletion flag.
+    columns:
+      - name: order_id
+        data_tests: [unique, not_null]
+      - name: is_deleted
+        data_tests: [not_null]

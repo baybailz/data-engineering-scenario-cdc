@@ -1,5 +1,10 @@
 version: 2
 
 models:
-  - name: dm_customer_summary
-    description: Customers by segment and state, with how many were imported.
+  - name: dm_open_orders
+    description: Current, not-deleted orders. What BI reads for "what's open right now".
+    columns:
+      - name: order_id
+        data_tests: [unique, not_null]
+  - name: dm_order_as_of
+    description: State of every order at the end of each loaded batch.

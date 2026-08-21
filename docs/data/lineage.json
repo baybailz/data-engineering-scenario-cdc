@@ -1,86 +1,92 @@
 {
  "nodes": [
   {
-   "id": "trn_tbl_customer",
-   "layer": "transform",
-   "type": "model",
-   "path": "models/transform/trn_tbl_customer.sql"
-  },
-  {
-   "id": "stg_incoming_customer",
-   "layer": "stage",
-   "type": "model",
-   "path": "models/stage/stg_incoming_customer.sql"
-  },
-  {
-   "id": "stg_customer",
-   "layer": "stage",
-   "type": "model",
-   "path": "models/stage/stg_customer.sql"
-  },
-  {
    "id": "dim_customer",
    "layer": "conformed",
    "type": "model",
    "path": "models/conformed/dim_customer.sql"
   },
   {
-   "id": "dim_record_status",
+   "id": "dim_order",
    "layer": "conformed",
    "type": "model",
-   "path": "models/conformed/dim_record_status.sql"
+   "path": "models/conformed/dim_order.sql"
   },
   {
-   "id": "dm_customer_summary",
+   "id": "fact_order_change",
+   "layer": "conformed",
+   "type": "model",
+   "path": "models/conformed/fact_order_change.sql"
+  },
+  {
+   "id": "dm_order_as_of",
    "layer": "datamart",
    "type": "model",
-   "path": "models/datamart/dm_customer_summary.sql"
+   "path": "models/datamart/dm_order_as_of.sql"
   },
   {
-   "id": "crm_customer",
-   "layer": "seed",
-   "type": "seed",
-   "path": "seeds/crm_customer.csv"
+   "id": "dm_open_orders",
+   "layer": "datamart",
+   "type": "model",
+   "path": "models/datamart/dm_open_orders.sql"
   },
   {
-   "id": "incoming_customer",
+   "id": "trn_tbl_order_change",
+   "layer": "transform",
+   "type": "model",
+   "path": "models/transform/trn_tbl_order_change.sql"
+  },
+  {
+   "id": "trn_tbl_order_current",
+   "layer": "transform",
+   "type": "model",
+   "path": "models/transform/trn_tbl_order_current.sql"
+  },
+  {
+   "id": "stg_incoming_order_change",
+   "layer": "stage",
+   "type": "model",
+   "path": "models/stage/stg_incoming_order_change.sql"
+  },
+  {
+   "id": "incoming_order_change",
    "layer": "seed",
    "type": "seed",
-   "path": "seeds/incoming_customer.csv"
+   "path": "seeds/incoming_order_change.csv"
   }
  ],
  "edges": [
   [
-   "stg_customer",
-   "trn_tbl_customer"
-  ],
-  [
-   "stg_incoming_customer",
-   "trn_tbl_customer"
-  ],
-  [
-   "incoming_customer",
-   "stg_incoming_customer"
-  ],
-  [
-   "crm_customer",
-   "stg_customer"
-  ],
-  [
-   "stg_customer",
+   "trn_tbl_order_change",
    "dim_customer"
   ],
   [
-   "trn_tbl_customer",
-   "dim_customer"
+   "trn_tbl_order_current",
+   "dim_order"
   ],
   [
-   "trn_tbl_customer",
-   "dim_record_status"
+   "trn_tbl_order_change",
+   "fact_order_change"
   ],
   [
-   "dim_customer",
-   "dm_customer_summary"
+   "fact_order_change",
+   "dm_order_as_of"
+  ],
+  [
+   "dim_order",
+   "dm_open_orders"
+  ],
+  [
+   "stg_incoming_order_change",
+   "trn_tbl_order_change"
+  ],
+  [
+   "trn_tbl_order_change",
+   "trn_tbl_order_current"
+  ],
+  [
+   "incoming_order_change",
+   "stg_incoming_order_change"
   ]
  ],
  "layers": [

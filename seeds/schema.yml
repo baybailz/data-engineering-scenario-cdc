@@ -1,25 +1,20 @@
 version: 2
 
 seeds:
-  - name: crm_customer
-    description: Master customer list. Master data always wins.
-    config:
-      column_types:
-        customer_id: integer
-        customer_name: varchar
-        city: varchar
-        state: varchar
-        segment: varchar
-  - name: incoming_customer
+  - name: incoming_order_change
     description: >
-      Landing table for incoming batches. Rebuilt by scripts/run.py from
-      state/loaded_files.json on every run, so it is a pure function of state.
+      Landing table for the simulated CDC feed (op, order_id, customer_id,
+      status, amount, changed_at, tx_seq). Rebuilt by scripts/run.py from
+      state/loaded_files.json on every run, so it is a pure function of
+      state and append-only in practice: rows are only ever added.
     config:
       column_types:
         source_file: varchar
         row_num: integer
+        op: varchar
+        order_id: integer
         customer_id: integer
-        customer_name: varchar
-        city: varchar
-        state: varchar
-        segment: varchar
+        status: varchar
+        amount: decimal(10,2)
+        changed_at: timestamp
+        tx_seq: integer

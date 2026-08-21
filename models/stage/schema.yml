@@ -1,15 +1,18 @@
 version: 2
 
 models:
-  - name: stg_customer
-    description: Master customers, typed and renamed.
-    columns:
-      - name: customer_id
-        data_tests: [unique, not_null]
-  - name: stg_incoming_customer
-    description: Incoming batch rows, one per line of every loaded file.
+  - name: stg_incoming_order_change
+    description: Raw change log rows, typed and renamed, one per line ever loaded.
     columns:
       - name: record_key
         data_tests: [unique, not_null]
-      - name: customer_id
+      - name: op
+        data_tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: [I, U, D]
+      - name: order_id
+        data_tests: [not_null]
+      - name: tx_seq
         data_tests: [not_null]

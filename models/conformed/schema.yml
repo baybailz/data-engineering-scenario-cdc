@@ -1,30 +1,58 @@
-# Conformed contracts: keys are unique and never null, every status is one
-# of a closed list, and every imported row traces back to an incoming record.
+# Conformed contracts: keys are unique and never null, status is one of a
+# closed list, and every fact row traces back to a dimension row.
 version: 2
 
 models:
+  - name: dim_order
+    description: The order dimension. Soft delete only; is_deleted flags a row, nothing removes it.
+    columns:
+      - name: order_key
+        data_tests: [unique, not_null]
+      - name: order_id
+        data_tests: [unique, not_null]
+      - name: customer_key
+        data_tests: [not_null]
+      - name: customer_id
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_customer')
+                field: customer_id
+      - name: status
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: [pending, paid, shipped, cancelled]
+      - name: is_deleted
+        data_tests: [not_null]
   - name: dim_customer
-    description: The customer dimension, master plus imported rows.
+    description: Customer ids seen on the order change log.
     columns:
       - name: customer_key
         data_tests: [unique, not_null]
       - name: customer_id
         data_tests: [unique, not_null]
-      - name: customer_name
-        data_tests: [not_null]
-  - name: dim_record_status
-    description: Disposition of every incoming record.
+  - name: fact_order_change
+    description: The full audit log, one row per deduped change event.
     columns:
-      - name: record_key
+      - name: tx_seq
+        data_tests: [unique, not_null]
+      - name: order_id
         data_tests:
-          - unique
           - not_null
           - relationships:
               arguments:
-                to: ref('stg_incoming_customer')
-                field: record_key
+                to: ref('dim_order')
+                field: order_id
+      - name: op
+        data_tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: [I, U, D]
       - name: status
         data_tests:
           - accepted_values:
               arguments:
-                values: [new, duplicate_of_master, duplicate_within_incoming]
+                values: [pending, paid, shipped, cancelled]
